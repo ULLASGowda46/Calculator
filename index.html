@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div>
+      <input type="text" class="input-bar" id="screen" readonly>
+    </div>
+    <div class="keyButtons1">
+      <button class="btn-ope" onclick="clearScreen()">C</button>
+      <button class="btn-ope" onclick="appendToScreen('%')">%</button>
+      <button class="btn-ope" id="backspace" onclick="deletePreNum()">
+        <span class=" material-symbols-outlined">
+          backspace
+        </span>
+      </button>
+      <button class="btn-ope" onclick="appendToScreen('/')">÷</button>
+    </div>
+    <div class="keyButtons2">
+      <button class="btn" onclick="appendToScreen('7')">7</button>
+      <button class="btn" onclick="appendToScreen('8')">8</button>
+      <button class="btn" onclick="appendToScreen('9')">9</button>
+      <button class="btn-ope" onclick="appendToScreen('*')">X</button>
+    </div>
+    <div class="keyButtons3">
+      <button class="btn" onclick="appendToScreen('4')">4</button>
+      <button class="btn" onclick="appendToScreen('5')">5</button>
+      <button class="btn" onclick="appendToScreen('6')">6</button>
+      <button class="btn-ope" style="font-size: xx-large;" onclick="appendToScreen('-')">-</button>
+    </div>
+    <div class="keyButtons4">
+      <button class="btn" onclick="appendToScreen('1')">1</button>
+      <button class="btn" onclick="appendToScreen('2')">2</button>
+      <button class="btn" onclick="appendToScreen('3')">3</button>
+      <button class="btn-ope" onclick="appendToScreen('+')">+</button>
+    </div>
+    <div class="keyButtons5">
+      <button class="btn" onclick="appendToScreen('00')">00</button>
+      <button class="btn" onclick="appendToScreen('0')">0</button>
+      <button class="btn" onclick="appendToScreen('.')">.</button>
+      <button class="btn-equal" onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
