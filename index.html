@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>calculator</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="style.css">
@@ -20,9 +21,8 @@
       <button class="btn-ope" onclick="clearScreen()">C</button>
       <button class="btn-ope" onclick="appendToScreen('%')">%</button>
       <button class="btn-ope" id="backspace" onclick="deletePreNum()">
-        <span class=" material-symbols-outlined">
-          backspace
-        </span>
+        <i class="material-icons" id="backspace"
+          style="color:rgb(255, 255, 255); background-color: rgb(30, 29, 29);">backspace</i>
       </button>
       <button class="btn-ope" onclick="appendToScreen('/')">÷</button>
     </div>

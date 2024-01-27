@@ -95,10 +95,10 @@
 }
 
 #backspace {
-  filter: invert(0.1);
-  background-color: black !important;
+  filter: invert(0);
+  color: #ffffff;
 }
 
 #backspace:hover {
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(66, 66, 66) !important;
 }
